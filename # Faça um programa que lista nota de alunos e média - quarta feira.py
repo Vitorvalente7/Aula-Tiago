@@ -1,0 +1,27 @@
+# Faça um programa que lista
+# Nome de um aluno 
+# Média
+#com base na média  ele terá as
+# #situações:  Aprovado| reprovado| em recuperação
+# acima de 7 aprovado
+# Entre 4 e 6.9: em recuperação
+# Abaixo de 4 reprovado
+
+aluno = []
+nota  = {}
+
+for media in range(0,3):
+    nota['Nome'] = input('Nome do aluno:')
+    nota['Nota'] = float(input('Nota do Aluno:'))
+    aluno.append(nota.copy())
+   
+    print('-='*30)
+
+    if nota['Nota'] > 7:
+        print("Voce esta aprovado")
+            
+    elif 4 < nota['Nota']< 7:
+        print("Voce esta em recuperação")
+            
+    else:
+        print('Voce esta reprovado')
